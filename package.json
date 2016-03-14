@@ -1,6 +1,6 @@
 {
   "name": "node-sass-global-import-once",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Import Sass files once globally.",
   "main": "index.js",
   "scripts": {
