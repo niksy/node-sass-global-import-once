@@ -1,0 +1,33 @@
+{
+  "name": "node-sass-global-import-once",
+  "version": "0.0.0",
+  "description": "Import Sass files once globally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint {,test/*.js} && mocha test/*.js"
+  },
+  "keywords": [],
+  "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "minimatch": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-niksy": "^1.0.5",
+    "mocha": "^2.4.5",
+    "node-sass": "^3.4.2",
+    "pify": "^2.3.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niksy/node-sass-global-import-once.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niksy/node-sass-global-import-once/issues"
+  },
+  "homepage": "https://github.com/niksy/node-sass-global-import-once#readme"
+}
