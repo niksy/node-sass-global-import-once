@@ -6,7 +6,11 @@
   "scripts": {
     "test": "eslint {,test/*.js} && mocha test/*.js"
   },
-  "keywords": [],
+  "keywords": [
+    "node-sass",
+    "import",
+    "once"
+  ],
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com/)",
   "license": "MIT",
   "dependencies": {

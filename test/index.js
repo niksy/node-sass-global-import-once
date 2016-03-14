@@ -9,7 +9,7 @@ function content ( file ) {
 	return fs.readFileSync(file, 'utf8');
 }
 
-test('output of index.scss should have "foo", "bar" and "baz" imports imported', function ( done ) {
+test('index.scss should have "foo", "bar" and "baz" imports', function ( done ) {
 
 	sass.render({
 		file: './test/fixtures/input/index.scss',
@@ -35,7 +35,7 @@ test('output of index.scss should have "foo", "bar" and "baz" imports imported',
 });
 
 
-test('output of page.scss should only have "bar" import imported', function ( done ) {
+test('page.scss should only have "bar" import', function ( done ) {
 
 	sass.render({
 		file: './test/fixtures/input/page.scss',
@@ -60,8 +60,7 @@ test('output of page.scss should only have "bar" import imported', function ( do
 
 });
 
-test('output of index.scss should only have "foo" and "baz" import imported and output of page.scss should only have "bar" import imported', function () {
-	/* eslint-disable no-console */
+test('index.scss should only have "foo" and "baz" imports; page.scss should only have "bar" import', function () {
 
 	var render = pify(sass.render);
 	var importer = fn([

@@ -65,9 +65,9 @@ var sass = require('sass');
 });
 ```
 
-Given two entry Sass files, CSS output would be:
+Given two entry Sass files, they would be treated as:
 
-**`index.css`**
+**`input/index.scss`**
 
 ```css
 @import "foo";
@@ -79,7 +79,7 @@ body {
 }
 ```
 
-**`page.css`**
+**`input/page.scss`**
 
 ```css
 @import "bar";
@@ -89,7 +89,7 @@ body {
 }
 ```
 
-`page.css` doesn’t include `foo` and `bar` imports since they should be imported globally only once.
+`page.scss` doesn’t include `foo` and `bar` imports since they should be imported globally only once inside `index.scss`.
 
 ## API
 
