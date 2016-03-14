@@ -39,8 +39,8 @@ body {
 ```
 
 ```js
+var sass = require('node-sass');
 var gio = require('node-sass-global-import-once');
-var sass = require('sass');
 
 ['./input/index.scss', './input/page.scss'].forEach(function ( file ) {
 
@@ -56,10 +56,9 @@ var sass = require('sass');
 					]
 				}
 			]),
-			io,
 		]
 	}, function( err, result ) {
-		//=> 
+		//=> …
 	});
 
 });
