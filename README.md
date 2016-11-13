@@ -4,7 +4,9 @@
 
 Import Sass files once globally.
 
-Useful when you would want to exclude certain components in output files and leave them only in one location (e.g. one component is imported globally and any other attempt to load it would produce empty string). Goes along nicely with [node-sass-import-once][node-sass-import-once].
+Useful when you would want to exclude certain components in output files and leave them only in one location (e.g. one component is imported globally and any other attempt to load it would produce empty string).
+
+Goes along nicely with [node-sass-import-once][node-sass-import-once]. If you use it with that importer, set it after this importer.
 
 ## Installation
 
@@ -94,6 +96,8 @@ body {
 
 ### gio(definitions)
 
+node-sass `file` option should be defined for this package to work properly.
+
 Package expects one argument, array of definitions (object) for global imports.
 
 Each object definitions contains following properties:
@@ -104,7 +108,7 @@ Type: `String`
 
 Name of the file or [minimatch][minimatch] expression which is considered as global entry point.
 
-### imports
+#### imports
 
 Type: `Array`
 
